@@ -29,7 +29,8 @@ const Sidebar = () => {
         </div>
 
         <div className="box1">
-          <div className="text_auto">Auto Correct</div>
+          <div>{""}</div>
+          <div className="text_auto">Autocorrect</div>
           <div className="BsMagic"><BsMagic/></div>
         </div>
 
