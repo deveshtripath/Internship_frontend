@@ -1,14 +1,15 @@
 import React from "react";
-import "./Sidebar.css";
+import "../Sidebar/Sidebar.css";
 import { BsMagic } from "react-icons/bs";
 import { BiMessageDetail } from "react-icons/bi";
 import { SiYoutube } from "react-icons/si";
 import { LiaBookSolid } from "react-icons/lia";
 import { BsFillPersonFill } from "react-icons/bs";
 import { BsThreeDotsVertical } from "react-icons/bs";
-import SidebarData from "./SidebarData";
+import ReviewFile from "./ReviewFile";
 
-const Sidebar = () => {
+
+const Plag = () => {
   return (
     <div className="sidebar">
       <div className="sidebar_inside">
@@ -28,34 +29,15 @@ const Sidebar = () => {
           </div>
         </div>
 
-        <div className="sidebar_third">
-          <div>
-            <div className="correct">Correct Sentence</div>
-            <div className="data">
-              <span className="BiMessageDetail">
-                <BiMessageDetail />
-              </span>
-              <SidebarData data={"Hi! whats going on?"} />{" "}
-            </div>
-            <div className="data">
-              <span className="BiMessageDetail">
-                <BiMessageDetail />
-              </span>
-              <SidebarData data={"Hey! how are you doing?"} />{" "}
-            </div>
-            <div className="data">
-              <span className="BiMessageDetail">
-                <BiMessageDetail />
-              </span>
-              <SidebarData data={"Hi! whats going on?"} />{" "}
-            </div>
-            <div className="data">
-              <span className="BiMessageDetail">
-                <BiMessageDetail />
-              </span>
-              <SidebarData data={"Hi! whats going on?"} />{" "}
-            </div>
-            <div className="data">more content ....</div>
+        <div className="speedometer">
+          <ReviewFile />
+        </div>
+
+        <div className="speedo_down">
+          <div className="speedo_data">
+            <div className="plag_found">Plagiarism found</div>
+            <div className="repeated_word">Repeated words</div>
+            <div className="content_prof">Content Uniqueness</div>
           </div>
         </div>
 
@@ -104,7 +86,7 @@ const Sidebar = () => {
         </div>
       </div>
     </div>
-  );
-};
+  )
+}
 
-export default Sidebar;
+export default Plag

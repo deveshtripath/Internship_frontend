@@ -125,3 +125,28 @@ span {
   .BiMessageDetail {
   font-size: 25px;
 }
+
+
+.speedometer{
+  margin: auto;
+  width: 50%;
+  height: 190px;
+  padding-right: 30px;
+}
+
+.speedo_down{
+  padding-top: 50px;
+  margin: auto;
+  width: 80%;
+}
+
+.speedo_data{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.plag_found, .content_prof, .repeated_word{
+  font-size: 18px;
+  font-weight: 700;
+}
